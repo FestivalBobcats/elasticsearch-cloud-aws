@@ -175,6 +175,10 @@ public class InternalAwsS3Service extends AbstractLifecycleComponent<AwsS3Servic
             return "s3-sa-east-1.amazonaws.com";
         } else if ("sa-east-1".equals(region)) {
             return "s3-sa-east-1.amazonaws.com";
+        } else if ("eu-central".equals(region)) {
+            return "s3-eu-central-1.amazonaws.com";
+        } else if ("eu-central-1".equals(region)) {
+            return "s3-eu-central-1.amazonaws.com";
         } else {
             throw new ElasticsearchIllegalArgumentException("No automatic endpoint could be derived from region [" + region + "]");
         }
